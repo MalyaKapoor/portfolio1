@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Malya Kapoor</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <nav id="hamburger-nav">
+    <div class="logo">Malya Kapoor</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <ul>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="C:\Users\HP\Downloads\WhatsApp Image 2024-06-21 at 15.40.51 (2).jpeg" alt="Profile Picture">
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Malya Kapoor</h1>
+      <p class="section__text__p2">Student</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('file:///C:/Users/HP/Downloads/Malyaresume.pdf')">
+          <h3>Download CV</h3>
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="linkedin.png" alt="LinkedIn profile" onclick="location.href='https://www.linkedin.com/in/malyakapoor/?originalSubdomain=in' ">
+        <img src="github.png" alt="Github profile" onclick="location.href='https://github.com/MalyaKapoor'">
+      </div>
+    </div>
+  </section>
+  
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <!-- Add any image or content here -->
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/education.png" alt="University icon" class="icon">
+            <h3>University</h3>
+            <p>BCA <br>Guru Gobind Singh Indraprastha University (2022-2025)</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon">
+            <h3>Education</h3>
+            <p>12th <br>Vivekanand Public School</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I am currently pursuing graduation in Computer Science from GGSIPU. I am passionate about business analytics, transforming data into insights, and improving data visualization. I have developed a strong foundation in Google Analytics, SQL, communication, and management. As a creative problem solver, I am committed to delivering high-quality work and exceeding expectations. I am eager to connect with other technology professionals and explore new opportunities for growth and development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="skills">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <!-- Add your skills content here -->
+          <div>
+            <div>Communication</div>
+            <div>Java</div>
+            <div>C++, C</div>
+            <div>HTML/CSS</div>
+            <div>Python</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="project">
+  <p class="section__text__p1">Check Out My</p>
+  <h1 class="title">Projects</h1>
+  <div class="project-container">
+    <div class="project">
+      <img src="path_to_project_image_1.jpg" alt="Project 1">
+      <div class="project-details">
+        <h2>Calculator </h2>
+        <p>using html and css 1.</p>
+        <a href="file:///C:/Users/HP/Desktop/calculator/index.html" class="btn btn-color-1">View Project</a>
+      </div>
+    </div>
+    <div class="project">
+      <img src="path_to_project_image_2.jpg" alt="Project 2">
+      <div class="project-details">
+        <h2>Cafe moorv</h2>
+        <p>using html and css 2.</p>
+        <a href="file:///C:/Users/HP/Desktop/New%20folder/index.html" class="btn btn-color-1">View Project</a>
+      </div>
+    </div>
+    <!-- Add more projects as needed -->
+  </div>
+</section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+        <p><a href="mailto:malyakapoor69@gmail.com">malyakapoor69@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+        <p><a href="https://www.linkedin.com/in/malyakapoor/?originalSubdomain=in">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+</html>
